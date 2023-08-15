@@ -251,7 +251,7 @@ aoristic.df <- function
       txt <- paste("  Use 'aoristic.datacheck()' to identify these rows.", "\n", sep = "")
       txt <- paste(txt, "  '?aoristic.datacheck' explains how aoristic.df handles these data.", "\n", sep = "")
     }
-    txt <- paste(txt, "  Any warnings appearing below indicate miscellaneous data errors that could not", "\n", sep = "")
+    txt <- paste("  Any warnings appearing below indicate miscellaneous data errors that could not", "\n", sep = "")
     txt <- paste(txt, "  diagnosed and corrected by the aoristic package. They have not be used in the analysis.","\n", sep = "")
     message(txt)
   }  
