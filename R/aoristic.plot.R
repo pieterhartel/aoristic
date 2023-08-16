@@ -20,7 +20,7 @@
 #' @references Ratcliffe, J. H. (2002). Aoristic signatures and the spatio-temporal analysis of high volume crime patterns. Journal of Quantitative Criminology, 18(1), 23-43.
 
 
-aoristic.plot <- function (data1){
+aoristic.plot <- function (data1, plot_title ){
 
 # Create the output data frame --------------------------------------------
 
@@ -91,7 +91,7 @@ aoristic.plot <- function (data1){
               panel.grid.minor = element_blank(),
               panel.background = element_rect(fill = 'white'),
               panel.border = element_blank())
-      p <- p + ggtitle(" ")
+      p <- p + ggtitle( plot_title )
       p <- p + theme(plot.title = element_text(size = 16))
 
       print(p)
